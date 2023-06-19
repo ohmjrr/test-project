@@ -1,0 +1,57 @@
+.container {
+  width: 800px;
+  height: 150px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border-color: rgb(159, 159, 159);
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.green-btn {
+  background-color: #8bc53f;
+}
+
+.black-btn {
+  background-color: black;
+  color: white;
+}
+
+.selected-btn {
+  background-color: white;
+  border: none;
+}
+
+.select-input {
+  width: 160px;
+  padding: 10px;
+  border-radius: 10px;
+}

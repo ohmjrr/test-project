@@ -1,0 +1,14 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("\src\assets\images\5953507.jpg");
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.chart {
+  border: 1px solid;
+  width: 1440px;
+  
+}

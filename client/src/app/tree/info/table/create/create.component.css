@@ -1,0 +1,56 @@
+.container {
+  width: 800px;
+  height: 250px;
+}
+
+.input-boxs {
+  width: 600px;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.label-box {
+  width: 90px;
+}
+.label-box-right {
+  width: 40px;
+}
+
+input {
+  padding: 10px;
+}
+
+.input-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gray-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.black-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
