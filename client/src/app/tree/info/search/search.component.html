@@ -1,20 +1,19 @@
-<div class="container">
+<form class="container"  [formGroup]="groupForm">
   <div class="input-box">
     <div>
-      <label>Group Name </label>
-      <input type="text" />
+      <label>{{ labelName }} </label>
+      <input type="text"  formControlName="name"/>
     </div>
     <div>
       <label for="mySelect">Active Flag </label>
-      <select class="select-input">
-        <option value="option1">Y</option>
-        <option value="option2">N</option>
+      <select class="select-input" formControlName="active">
+        <option value="Y">Y</option>
+        <option value="N">N</option>
       </select>
-      
     </div>
   </div>
   <div class="btn-box">
-    <button class="green-btn">Search</button>
+    <button class="green-btn" (click)="getData(labelName)">Search</button>
     <button class="black-btn">Cancel</button>
   </div>
-</div>
+</form>

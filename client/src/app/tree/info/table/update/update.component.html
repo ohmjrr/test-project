@@ -1,25 +1,96 @@
 <div class="container">
-    <h1>Update Group</h1>
-    <div class="input-boxs">
-      <div class="input-top">
-        <div class="input-box">
-          <div class="label-box"><label for="">Group Name </label></div>
-          <input type="text" />
-        </div>
-        <div class="input-box">
-          <div class="label-box-right"><label for="">Icon </label></div>
-          <input type="text" />
-        </div>
+  <h1>Add {{btnForm}}</h1>
+  <form [formGroup]="groupForm" *ngIf="btnForm === 'Group'">
+    <div class="input-top">
+      <div class="form-group">
+        <label>Group Name </label>
+        <input type="text" formControlName="name" />
       </div>
-      <div class="input-box">
-        <div class="label-box"><label for="">Active Flag </label></div>
-        <input type="text" />
+      <div class="form-group">
+        <label>Icon </label>
+        <input type="text" formControlName="icon" />
       </div>
     </div>
-  
+    <div class="form-group">
+      <label>Active Flag </label>
+      <input type="text" formControlName="active" />
+    </div>
+
     <div class="btn-bottom">
-      <button class="gray-btn">Confirm</button>
-      <button class="black-btn">Cancel</button>
+      <button class="gray-btn" (click)="editGroup()">Confirm</button>
+      <button class="black-btn" (click)="close()">Cancel</button>
     </div>
-  </div>
-  
+  </form>
+
+  <form [formGroup]="groupForm" *ngIf="btnForm === 'Menu'">
+    <div class="input-top">
+      <div class="form-group">
+        <label>Menu Name </label>
+        <input type="text" formControlName="name" />
+      </div>
+      <div class="form-group">
+        <label>Active Flag </label>
+        <input type="text" formControlName="active" />
+      </div>
+    </div>
+
+    <div class="btn-bottom">
+      <button class="gray-btn" (click)="editGroup()">Confirm</button>
+      <button class="black-btn" (click)="close()">Cancel</button>
+    </div>
+  </form>
+
+  <form [formGroup]="groupForm" *ngIf="btnForm === 'Box'">
+    <div class="input-top">
+      <div class="form-group">
+        <label>Box Name </label>
+        <input type="text" formControlName="name" />
+      </div>
+      <div class="form-group">
+        <label>Active Flag </label>
+        <input type="text" formControlName="active" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Department </label>
+      <input type="text" formControlName="department" />
+    </div>
+
+    <div class="form-group">
+      <label>Detail </label>
+      <input type="text" formControlName="detail" />
+    </div>
+
+    <div class="btn-bottom">
+      <button class="gray-btn" (click)="editGroup()">Confirm</button>
+      <button class="black-btn" (click)="close()">Cancel</button>
+    </div>
+  </form>
+
+  <form [formGroup]="groupForm" *ngIf="btnForm === 'Screen'">
+    <div class="input-top">
+      <div class="form-group">
+        <label>Screen Name </label>
+        <input type="text" formControlName="name" />
+      </div>
+      <div class="form-group">
+        <label>Active Flag </label>
+        <input type="text" formControlName="active" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Supgroup </label>
+      <input type="text" formControlName="supgroup" />
+    </div>
+
+    <div class="form-group">
+      <label>url </label>
+      <input type="text" formControlName="url" />
+    </div>
+
+    <div class="btn-bottom">
+      <button class="gray-btn" (click)="editGroup()">Confirm</button>
+      <button class="black-btn" (click)="close()">Cancel</button>
+    </div>
+  </form>
+</div>

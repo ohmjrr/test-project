@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { TreeComponent } from './tree.component';
 import { TreeRoutingModule } from './tree-routing.module';
@@ -28,6 +29,8 @@ import { TreeService } from './service/tree.service';
     TableComponent,
     SearchComponent,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [TreeService],
 })

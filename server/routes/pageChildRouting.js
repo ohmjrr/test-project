@@ -1,8 +1,16 @@
 import { Router } from "express";
-import { getPageChild } from "../controllers/pageChildController.js";
+import { deletedChild, getChildFilter, getPageChild, postChild, updateChild,  } from "../controllers/pageChildController.js";
 
 const pageChild = Router();
 
-pageChild.get("/", getPageChild);
+pageChild.get("/:id", getPageChild);
+
+pageChild.get("/filter",getChildFilter)
+
+pageChild.post("/", postChild);
+
+pageChild.put("/:id", updateChild);
+
+pageChild.delete("/:id", deletedChild)
 
 export default pageChild;

@@ -1,7 +1,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url("\src\assets\images\5953507.jpg");
+  background-color: white;
   object-fit: cover;
   display: flex;
   justify-content: center;

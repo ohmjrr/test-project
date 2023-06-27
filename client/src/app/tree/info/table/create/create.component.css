@@ -12,17 +12,15 @@
   justify-content: space-evenly;
 }
 
-.input-box {
+.form-group {
   display: flex;
   flex-direction: row;
 }
 
-.label-box {
+label {
   width: 90px;
 }
-.label-box-right {
-  width: 40px;
-}
+
 
 input {
   padding: 10px;
